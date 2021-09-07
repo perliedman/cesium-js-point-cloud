@@ -1,0 +1,22 @@
+{
+  "name": "cesium-js-point-cloud",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Per Liedman <per@solvi.ag>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "cesium": "^1.84.0",
+    "postcss": "^8.3.6",
+    "rollup-plugin-postcss": "^4.0.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "http-server": "^13.0.1",
+    "rollup": "^2.56.3"
+  },
+  "scripts": {
+    "start": "mkdir -p assets && cp -a node_modules/cesium/Build/Cesium/* assets && rollup -cw"
+  }
+}
